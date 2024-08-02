@@ -6,8 +6,7 @@ width = input("가로의 길이는? ")
 height = input("세로의 길이는? ")
 
 #계산
-area = (int(width) * int(height))
-
+area = width * height
 
 #출력
 print(f'직사각형의 넓이는 {area}cm')
