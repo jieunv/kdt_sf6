@@ -9,11 +9,11 @@ else:
 """
 
 age = 25
-if age < 20:
+if 0 >= age < 20: #0 < age < 0
     print("미성년자 입니다.")
-elif age < 30:
+elif age >= 20 and age < 30:
     print("30대 입니다.")
-elif age < 40:
+elif age >= 30 and age < 40:
     print("40대 입니다.")
 else:
     print("이제는 중년...")
