@@ -19,11 +19,3 @@ for i in range(0,row):
         print(seat, end=" ")
     print()
 
-
-vending_machine = ['게토레이','레쓰비','생수','이프로']
-
-for i in vending_machine:
-    print(i)
-    
-drink = input("마시고 싶은 음료?")
-print(f'{drink} 드릴게요')

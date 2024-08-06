@@ -1,18 +1,24 @@
-'''score = int(input("점수 입력: "))
+# 다중 if 실습
+# 점수가 마이너스일 경우 처리: "올바른 점수를 입력해주세요"
+
+score = int(input("점수 입력: "))
 grade = "" #빈 문자열
-
-if score >= 90:
-    grade = "A"
-elif 80 <= score < 90:
-    grade = "B"
-elif 70 <= score < 80:
-    grade = "C"
-elif 60 <= score < 70:
-    grade ="D"
+'''
+if score > 0:
+    if score >= 90:
+        grade = "A"
+    elif 80 <= score < 90:
+        grade = "B"
+    elif 70 <= score < 80:
+        grade = "C"
+    elif 60 <= score < 70:
+        grade = "D"
+    else:
+        grade = "E"
+    print(f'{grade} 등급입니다.')
 else:
-    grade ="E"
+    print("올바른 점수를 입력해주세요")
 
-print(f'{grade} 등급입니다.')'''
 
 # 연령이 20대인 경우 성별이 여성이면 "20대 여성입니다."로 출력하고 남성이면 "20대 남성입니다."로 출력
 age = int(input("나이를 입력해주세요."))
@@ -29,4 +35,20 @@ elif age < 40:                    #age >= 30 and age < 40:
     print("30대 입니다.")
 else:
     print("이제는 중년...")
-print(f'나이는 {age}세 입니다.')
+print(f'나이는 {age}세 입니다.')'''
+
+
+if score < 0:
+    print("올바른 점수를 입력하세요")
+else:
+    if score >= 90:
+        grade = "A"
+    elif 80 <= score < 90:
+        grade = "B"
+    elif 70 <= score < 80:
+        grade = "C"
+    elif 60 <= score < 70:
+        grade = "D"
+    else:
+        grade = "E"
+    print(f'{grade} 등급입니다.')

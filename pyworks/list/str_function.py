@@ -18,7 +18,16 @@ lower_case = "Hello".lower()
 print(upper_case, lower_case)
 
 friends = "존 루나 제리"
+a = friends.split(" ") #split()을 썼기에 a는 단순한 변수가 아닌 list가 된다.
 print(friends.split(" ")) # 구분기호 - 공백문자
+
+# 입력받아서 리스트로 만들기
+input_num = input("숫자 입력: ").split(" ")
+print(input_num) #문자가 저장됨
+numbers = [] #숫자를 저장할 리스트
+for i in input_num:
+    numbers.append(int(i))
+print(numbers)
 
 alpa = "a:b:c:d"
 print(alpa.split(":"))  # :은 구분 기호
@@ -26,9 +35,9 @@ print(alpa.split(":"))  # :은 구분 기호
 email = "codingOn@spreatics.com"
 print(email.split("@"))
 
-# replace()
+'''# replace()
 msg = "Hello Python"
-print(msg.replace(__old="Python", __new="C++"))
+print(msg.replace(__old="Python", __new="C++"))'''
 
 
 
