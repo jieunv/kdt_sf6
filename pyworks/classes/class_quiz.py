@@ -26,11 +26,12 @@ class Calculator:
         else:
             return self.x / self.y
 
-c1 = Calculator(10,2)
-print(c1.add())
-print(c1.sub())
-print(c1.mul())
-print(c1.div())
+if __name__=="__main__": # name이 main이면 파일 분리가 가능하다.
+    calc_a = Calculator(10,2)
+    print(calc_a.add())
+    print(calc_a.sub())
+    print(calc_a.mul())
+    print(calc_a.div())
 '''
 
 # 실습2. 슈퍼마켓 클래스
@@ -59,6 +60,7 @@ class Supermarket:
         print(f'위치: {self.location}, 이름: {self.name},' 
               f'상품: {self.product}, 고객수: {self.customer}')
 
+# if __name__=="__main__":
 super1 = Supermarket("마포구 염리동", "마켓온", "음료",10)
 super1.print_location()
 super1.chang_category("음료")
